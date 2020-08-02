@@ -1,0 +1,98 @@
+.footer {
+  background-color: $footer-background;
+}
+
+.footer-upper {
+  align-items: center;
+}
+.footer-address-container {
+  margin: 45px 69px 46px 0px;
+}
+
+.footer .address {
+  flex-direction: column;
+  margin-top: 8px;
+}
+.footer-address-container .link {
+  margin-top: 9px;
+}
+
+.footer .logo,
+.footer .address {
+  color: $white-color;
+
+  transition: color 250ms $transition-timing-function;
+}
+.footer .text {
+  color: $white-color;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.address > .link {
+  color: $footer-address-color;
+
+  transition: color 250ms $transition-timing-function;
+}
+
+.footer-join .text {
+  margin-bottom: 20px;
+}
+
+.footer-mail {
+  margin-left: auto;
+}
+
+.developed {
+  color: $footer-developed-text;
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mail-footer-text {
+  resize: none;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  font-size: 16px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mail-footer-text::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.mail-footer-text:focus {
+  border-color: $accent-color;
+  outline: none;
+}
+.icon-mail_send {
+  margin-left: 10px;
+}
+.footer-mail-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-mail button {
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

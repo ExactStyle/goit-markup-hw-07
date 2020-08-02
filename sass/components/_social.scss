@@ -1,0 +1,45 @@
+.social-item {
+  width: 44px;
+  height: 44px;
+
+  fill: $main-icons;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+
+  & a {
+    padding: 12px;
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .team & {
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  .footer-join & {
+    background-color: $footer-icons;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white-color;
+  }
+}
+
+.social-icon {
+  fill: inherit;
+
+  transition: fill 250ms $transition-timing-function;
+}

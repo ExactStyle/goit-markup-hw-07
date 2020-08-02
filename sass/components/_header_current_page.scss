@@ -1,0 +1,6 @@
+.header .current {
+  color: $accent-color;
+}
+.header .current::after {
+  transform: scale(1);
+}

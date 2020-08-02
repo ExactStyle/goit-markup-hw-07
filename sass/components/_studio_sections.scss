@@ -1,0 +1,31 @@
+/* Заголовки секций index.html */
+.directions .title,
+.team .title,
+.clients .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.features .title-secondary,
+.team .title-secondary {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Оступы для секций */
+.hero,
+.features,
+.directions,
+.team,
+.clients {
+  margin-bottom: 94px;
+}
+/* Отступы элементов списка */
+.features .item + .item,
+.directions .item + .item,
+.team .item + .item,
+.clients .item + .item {
+  margin-left: 30px;
+}

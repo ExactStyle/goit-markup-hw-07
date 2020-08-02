@@ -1,0 +1,38 @@
+.projects {
+  margin-top: 93px;
+  margin-bottom: 94px;
+
+  & h2 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    padding: 20px 24px 4px;
+  }
+
+  & .text {
+    color: $text-normal-color;
+    font-size: 16px;
+    line-height: 1.87;
+
+    padding: 0px 24px 20px;
+  }
+
+  & .item {
+    width: 370px;
+    margin-bottom: 30px;
+
+    background: $white-color;
+    line-height: 0;
+  }
+
+  & .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  & .border {
+    outline: 1px solid #eeeeee;
+    width: calc(100% - 2px);
+    margin: auto;
+  }
+}

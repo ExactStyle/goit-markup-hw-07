@@ -1,0 +1,31 @@
+// Shadow on item
+.projects .item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.description-container {
+  background-color: $background-high-accent;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms $transition-timing-function;
+
+  & .description {
+    color: $white-color;
+    font-size: 18px;
+    line-height: 1.56;
+
+    padding: 63px 24px;
+  }
+
+  .project-img:hover & {
+    transform: translateY(-100%);
+  }
+}

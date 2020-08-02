@@ -1,0 +1,79 @@
+.header {
+  align-items: center;
+}
+
+.header > address > .list {
+  margin-left: auto;
+}
+.header .link {
+  color: $text-bold-color;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $transition-timing-function;
+}
+
+.nav-site {
+  margin-left: 85px;
+}
+
+.nav-site .link {
+  display: inline-block;
+  line-height: 80px;
+
+  position: relative;
+}
+
+.nav-site .link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+
+  bottom: 0;
+  left: 0;
+
+  position: absolute;
+
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $transition-timing-function;
+}
+
+.nav-site .link:hover:after,
+.nav-site .link:focus:after {
+  transform: scale(1);
+}
+
+.nav-site .item + .item {
+  margin-left: 50px;
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.header-address .link {
+  color: $text-normal-color;
+}
+
+.header-address .item + .item {
+  margin-left: 30px;
+}
+
+.header-address .link {
+  fill: $text-normal-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-address-icon {
+  fill: inherit;
+  margin-right: 10px;
+}

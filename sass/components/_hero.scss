@@ -1,0 +1,47 @@
+.hero {
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      $background-white-text,
+      $background-white-text
+    ),
+    url("../images/h1_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & .title {
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    display: inline-block;
+    margin: 200px 252px 30px;
+  }
+}
+
+.hero .link {
+  color: $white-color;
+  background-color: $accent-color;
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  transition: color 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+    background-color: $white-color;
+  }
+}

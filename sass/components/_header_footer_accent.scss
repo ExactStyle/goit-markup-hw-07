@@ -1,0 +1,9 @@
+.header .link:focus,
+.header .link:hover,
+.footer .logo:focus,
+.footer .logo:hover,
+.address .link:focus,
+.address .link:hover {
+  color: $accent-color;
+  fill: $accent-color;
+}

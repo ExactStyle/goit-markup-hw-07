@@ -1,0 +1,20 @@
+.features {
+  & .item {
+    width: 270px;
+  }
+
+  &-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-icon-container {
+    background: #f5f4fa;
+    height: 120px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

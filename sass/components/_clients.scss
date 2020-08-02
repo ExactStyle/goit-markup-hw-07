@@ -1,0 +1,24 @@
+.clients .item {
+  width: 170px;
+  height: 90px;
+  fill: $main-icons;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-icons;
+  border-radius: 4px;
+
+  transition: fill 250ms $transition-timing-function,
+    border-color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client-icon {
+  fill: inherit;
+}
